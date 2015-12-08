@@ -22,7 +22,7 @@ time    = 1
 #weighting = Rubella::Weighting::PerValue.new buckets
 weighting = Rubella::Weighting::PerOverallLoad.new buckets
 #weighting = Rubella::Weighting::Exponential.new buckets
-storage   = Rubella::Storage.new Array.new(1, Array.new(cores, 0)), col
+storage   = Rubella::Storage.new Array.new(1, Array.new(buckets, 0)), col
 
 while true
   dataset = Array.new()
